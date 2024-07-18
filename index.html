@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cinta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="nameContainer">
+        <h1>Selamat Datang di Website Cinta</h1>
+        <p>Masukkan nama Anda untuk memulai:</p>
+        <div class="input-table">
+            <input type="text" id="nameInput" placeholder="Nama Anda">
+            <button id="startButton">Mulai</button>
+        </div>
+    </div>
+    <div class="container" id="mainContainer" style="display: none;">
+        <h1>Selamat Datang, <span id="userName"></span>!</h1>
+        <p>Ini adalah tempat untuk berbagi cinta dan kebahagiaan.</p>
+        <button id="loveButton">❤️ Mulai Cinta ❤️</button>
+        <div id="questionContainer" style="display: none;">
+            <p id="questionText" class="question-text"></p>
+            <div class="options" id="optionsContainer"></div>
+            <div class="input-table" id="customInputContainer" style="display: none;">
+                <input type="text" id="loveInput" placeholder="Masukkan jawaban Anda">
+                <button id="submitLove">Kirim</button>
+            </div>
+            <div class="input-table" id="dateInputContainer" style="display: none;">
+                <label for="yearSelect">Tahun</label>
+                <select id="yearSelect"></select>
+                <label for="monthSelect">Bulan</label>
+                <select id="monthSelect"></select>
+                <label for="daySelect">Hari</label>
+                <select id="daySelect"></select>
+                <button id="submitDate">Kirim</button>
+            </div>
+        </div>
+        <div id="cakeContainer" style="display: none;">
+            <img src="cake.jpg" alt="Kue" class="cake-image">
+            <p>Apakah Anda ingin kue?</p>
+            <button id="yesButton">Iya</button>
+            <button id="noButton">Tidak</button>
+        </div>
+        <div id="feedbackContainer" style="display: none;">
+            <h2>Masukkan untuk Website</h2>
+            <textarea id="feedbackInput" placeholder="Bantu Fahrie Menambah/Memperbaiki Terimakasih!"></textarea>
+            <button id="submitFeedback">Kirim Masukkan</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <audio id="backsound" src="backsound.mp3"></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>

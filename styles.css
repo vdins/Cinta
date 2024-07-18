@@ -1,0 +1,132 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffccff;
+    color: #660066;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffe6ff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: auto;
+}
+
+h1 {
+    color: #cc0099;
+}
+
+button {
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff3399;
+}
+
+p {
+    font-size: 18px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.option {
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.option:hover {
+    background-color: #ff3399;
+    transform: scale(1.1);
+}
+
+.input-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.input-table input, .input-table select, .input-table textarea {
+    padding: 10px;
+    border: 2px solid #ff66b2;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.input-table label {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.question-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cake-image {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#feedbackContainer {
+    margin-top: 20px;
+}
+
+#feedbackInput {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .question-text {
+        font-size: 20px;
+    }
+}
